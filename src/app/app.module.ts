@@ -9,6 +9,8 @@ import { VendorsComponent } from './components/vendors/vendors.component';
 import { GalleryWeddingsComponent } from './components/gallery-weddings/gallery-weddings.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { VenueListComponent } from './components/venues/venue-list/venue-list.component';
+import { VenueItemComponent } from './components/venues/venue-item/venue-item.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FooterComponent } from './components/footer/footer.component';
     VendorsComponent,
     GalleryWeddingsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    VenueListComponent,
+    VenueItemComponent
   ],
   imports: [
     BrowserModule,
