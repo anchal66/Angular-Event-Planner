@@ -1,25 +1,4 @@
 <div class="bg-white">
-  <div class="row bg-light m-2 p-2 shadow-lg rounded" *ngFor="let venue of venues">
-    <div class="col-md-5 border">
-      <img
-        [src]='venue.imgUrl'
-        alt="" class="img-fluid">
-    </div>
-    <div class="col-md-4 border p-1">
-      <h2>{{venue.title}}</h2>
-      <p class="text-muted">{{venue.address1}}, {{venue.address2}}, {{venue.zipCode}}</p>
-      <p class="font-weight-bold">HIGHLIGHTS</p>
-      <ul *ngFor="let item of venue.highlights">
-        <li>{{item}}</li>
-      </ul>
-    </div>
-    <div class="col-md-3 border p-2">
-      <h4>Price</h4>
-      <h5>{{venue.price}}</h5>
-      <hr>
-      <h4>Rating</h4>
-      <h5>{{venue.rating}}</h5>
-      <button class="btn btn-danger"><b>Book Now</b></button>
-    </div>
-  </div>
+  <app-venue-item *ngFor="let venue of venues" [venue]="venue">
+  </app-venue-item>
 </div>

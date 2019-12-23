@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { VenuesModel } from '../../venues.model';
 
 @Component({
   selector: 'app-venue-item',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./venue-item.component.css']
 })
 export class VenueItemComponent implements OnInit {
-
+  @Input() venue: VenuesModel;
   constructor() { }
 
   ngOnInit() {

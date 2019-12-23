@@ -10,7 +10,9 @@ import { GalleryWeddingsComponent } from './components/gallery-weddings/gallery-
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { VenueListComponent } from './components/venues/venue-list/venue-list.component';
-import { VenueItemComponent } from './components/venues/venue-item/venue-item.component';
+import { VenueItemComponent } from './components/venues/venue-list/venue-item/venue-item.component';
+import { VendorsListComponent } from './components/vendors/vendors-list/vendors-list.component';
+import { VendorsItemComponent } from './components/vendors/vendors-item/vendors-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { VenueItemComponent } from './components/venues/venue-item/venue-item.co
     HeaderComponent,
     FooterComponent,
     VenueListComponent,
-    VenueItemComponent
+    VenueItemComponent,
+    VendorsListComponent,
+    VendorsItemComponent
   ],
   imports: [
     BrowserModule,
