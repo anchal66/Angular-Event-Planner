@@ -1,4 +1,6 @@
-<div class="bg-white">
-  <app-venue-item *ngFor="let venue of venues" [venue]="venue">
+<div class="bg-white list-group">
+  <app-venue-item *ngFor="let venue of venues"
+  (venueSelected)="onSelect(venue)"
+  [venue]="venue">
   </app-venue-item>
 </div>

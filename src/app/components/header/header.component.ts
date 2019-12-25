@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  temp = false;
   constructor() { }
 
   ngOnInit() {
+  }
+  onClick() {
+    this.temp = !this.temp;
+    console.log(this.temp);
   }
 
 }

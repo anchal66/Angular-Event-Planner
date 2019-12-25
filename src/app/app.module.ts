@@ -13,6 +13,7 @@ import { VenueListComponent } from './components/venues/venue-list/venue-list.co
 import { VenueItemComponent } from './components/venues/venue-list/venue-item/venue-item.component';
 import { VendorsListComponent } from './components/vendors/vendors-list/vendors-list.component';
 import { VendorsItemComponent } from './components/vendors/vendors-item/vendors-item.component';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { VendorsItemComponent } from './components/vendors/vendors-item/vendors-
     VenueListComponent,
     VenueItemComponent,
     VendorsListComponent,
-    VendorsItemComponent
+    VendorsItemComponent,
+    DropdownDirective
   ],
   imports: [
     BrowserModule,
